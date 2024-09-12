@@ -1,19 +1,22 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [ RouterLink, CommonModule ],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css'
 })
 export class MenuComponent {
-   menu = [
+   rutas = [
     { name: 'Home', path: '/home' },
-    { name: 'Contact', path: '/contact' },
     { name: 'About', path: '/about' },
-    { name: 'Publicaciones', path: '/posts' },
+    { name: 'Contact', path: '/contact' },
+    { name: 'Posts', path: '/posts' },
+    { name: 'Formulario', path: '/form' },
+    { name: 'Personas', path: '/formulario'}
    ];
 }

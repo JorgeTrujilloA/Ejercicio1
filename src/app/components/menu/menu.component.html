@@ -1,11 +1,11 @@
-<!-- <ul class="list-group">
-    <a routerLink="{{ item.path }}" class="list-group-item" *ngFor="let item of menu">
-        {{ item.name }}
-    </a>
-</ul>
- -->
 <ul class="list-group">
-    <a [routerLink]="item.path" class="list-group-item" *ngFor="let item of menu">
-        {{ item.name }}
-    </a>
+ <a routerLink="{{ ruta.path }}" class="list-group-item" *ngFor="let ruta of rutas">
+    {{ ruta.name }}
+</a>
 </ul>
+
+<!-- <ul class="list-group">
+    <a [routerLink]="ruta.path" class="list-group-item" *ngFor="let ruta of rutas">
+       {{ ruta.name }}
+ </a>
+</ul> -->
